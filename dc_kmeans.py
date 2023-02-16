@@ -2,7 +2,8 @@
 # -*- coding: utf-8 -*-
 
 #############################
-# This file implements the DC-Kmeans, and it is adapted from the publicly available implementations.
+# This file implements the DC-Kmeans, and it is adapted from the publicly available implementations
+# at https://github.com/tginart/deletion-efficient-kmeans.
 #############################
 
 import numpy as np

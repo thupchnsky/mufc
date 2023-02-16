@@ -2,7 +2,8 @@
 # -*- coding: utf-8 -*-
 
 #############################
-# This file implements the k-fed, and it is adapted from the publicly available implementations.
+# This file implements the k-fed, and it is adapted from the publicly available implementations
+# at https://github.com/metastableB/kfed/.
 #############################
 
 import os
