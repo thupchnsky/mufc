@@ -23,7 +23,7 @@ chmod +x run.sh
 ```
 
 # Contact
-Please contact Chao Pan (chaopan2@illinois.edu), Saurav Prakash (sauravp2@illinois.edu) if you have any question.
+Please contact Chao Pan (chaopan2@illinois.edu), Jin Sima (jsima@illinois.edu), Saurav Prakash (sauravp2@illinois.edu) if you have any question.
 
 # Citation
 If you find our code or work useful, please consider citing our paper:
