@@ -196,3 +196,32 @@ def split_data(data_combined,
         raise NotImplementedError
 
     return json_data
+
+
+def generate_data(data_input,
+                  num_clusters,
+                  save_flag=True,
+                  filename='processed_data.pkl',
+                  num_clients=None,
+                  split='iid',
+                  k_prime=None):
+    """
+        Process, split and save data into .pkl files
+    """
+    json_data = {}
+    json_data['full_data'] = data_input
+    
+    # normalize each dimension
+    data_max = json_data['full_data'].max()
+    if data_max > 1:
+        json_data['full_data'] = json_data['full_data'] / float(data_max)
+    
+    json_data['num_clusters'] = num_clusters
+    split_json = split_data(json_data['full_data'], num_clusters, num_clients, split, k_prime)
+    json_data.update(split_json)
+    print("data processed!")
+    
+    if save_flag:
+        # save the data to file
+        with open(filename, "wb") as fw:
+            pickle.dump(json_data, fw)
