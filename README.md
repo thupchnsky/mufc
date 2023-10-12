@@ -6,7 +6,7 @@ An efficient method for federated (K-means) clustering and its corresponding unl
 # Datasets
 `Celltype`, `Gaussian`, `Postures`, `Covtype` can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1LqazOJuH3uOgFxHtBodwon6htEE2Wq13) provided by the authors of [DC-Kmeans](https://arxiv.org/abs/1907.05012). `FEMNIST` can be downloaded from the [Leaf Project](https://leaf.cmu.edu/). `TCGA` and `TMI` may contain potentially sensitive biological data and can be downloaded after logging into the databases ([TCGA](https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga), [TMI](https://commonfund.nih.gov/hmp)). We can provide the data processing pipelines upon reasonable requests via emails.
 
-We also provide a utility function `split_data` in `utils.py` to split the data for clients in federated setting. One example of the `Celltype` dataset after data preprocessing is included in this repository.
+We also provide a utility function `generate_data` in `utils.py` to generate the data for clients in federated setting, where `data_input` is the raw global feature matrix. Please refer to the function for more details. One example of the `Celltype` dataset after data generation is included in this repository.
 
 # Usage
 Two other methods, [DC-Kmeans](https://arxiv.org/abs/1907.05012) and [K-FED](https://arxiv.org/abs/2103.00697), are also implemented in this repository for comparison.
